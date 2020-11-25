@@ -1,0 +1,354 @@
+/*Global Rules*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial,sans-serif;
+    background-color: #edf2f7;
+    color: #333;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: underline;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+    margin: auto;
+}
+.logout{
+    background-color: darkcyan;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.info{
+    color: darkcyan;
+    text-align: center;
+}
+.remember-me{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.remember-me label{
+    margin-top: 0 !important;
+    margin-right: 10px;
+    padding: 0 !important;
+}
+/*Navigation Bar*/
+.nav{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.menu-controls{
+    display: none;
+}
+.nav .container-nav{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.nav ul{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.nav ul.first{
+    justify-content: flex-start;
+}
+.nav ul.second{
+    justify-content: flex-end;
+}
+
+.nav ul li:not(:last-of-type){
+    margin-right: 10px;
+}
+.nav ul li a{
+    padding: 5px;
+}
+
+/*Registration form*/
+.form-container,
+.posts-container{
+    margin-top: 100px;
+    background: #fff;
+}
+.posts-container{
+    padding: 10px;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+.form-container form label{
+    margin-top: 10px;
+    padding: 5px;
+}
+.form-container form input{
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.form-container form input[type="submit"]{
+    background-color: darkcyan;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.form-container form textarea{
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    background-color: #eee;
+}
+.form-container .error{
+    color: red;
+    padding-top: 10px;
+}
+/*Posts*/
+.post{
+    padding: 10px;
+}
+.post:not(:last-of-type){
+    border-bottom: 1px solid #ddd;
+}
+.post .poster-info{
+    margin-bottom: 10px;
+}
+.post .poster-info a{
+    font-weight: bolder;
+    color: #111;
+    margin-right: 10px;
+}
+.post .poster-info a:hover{
+    text-decoration: none;
+}
+.post .poster-info time{
+    color: #666;
+    font-size: 15px;
+}
+.post .post-body{
+    padding:5px 15px;
+    background-color: #eee;
+    position: relative;
+}
+.post .post-likes-count{
+    background-color: darkcyan;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+}
+.post .post-controls{
+    display: flex;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+.post .post-controls form:first-of-type{
+    margin-right: 10px;
+}
+.post .post-controls input.like{
+    color: darkcyan;
+}
+.post .post-controls input.unlike{
+    color: indianred;
+}
+.post .post-controls input{
+    background-color: transparent;
+    cursor: pointer;
+    border:none;
+    outline: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex svg{
+    max-width: 30px;
+    max-height: 30px;
+}
+nav.flex{
+    max-width: 600px;
+    margin: auto;
+}
+nav.flex > div:first-of-type{
+    display: none;
+}
+nav.flex > div:last-of-type{
+    margin-top: 15px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+nav.flex > div:last-of-type > div:first-of-type{
+    color: darkcyan;
+}
+nav.flex > div:last-of-type > div:last-of-type > span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkcyan;
+}
+nav.flex > div:last-of-type > div:last-of-type > span > *{
+    flex: 1;
+    padding: 5px;
+    color: #fff;
+}
+nav.flex > div:last-of-type > div:last-of-type > span > span{
+    text-decoration: underline;
+}
+
+/*User Page*/
+
+.user-container{
+    background-color: darkcyan;
+    color: #fff;
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: -80px;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 10px;
+}
+.user-container p{
+    padding: 5px;
+}
+
+/*Home Page*/
+
+.welcome-container{
+    background-color: darkcyan;
+    color: #fff;
+    max-width: 600px;
+    padding: 15px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+.links{
+    background-color: #fff;
+    color: darkcyan;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*Dashboard Page*/
+.card-container{
+    margin: 100px auto 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    background-color: darkcyan;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    flex-basis: 100px;
+}
+
+/*Mobile Screens*/
+@media screen and (max-width: 500px){
+    .nav{
+        border-bottom: 1px solid #fff;
+        color: #fff;
+    }
+    .nav .container-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-controls{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        color: darkcyan;
+        width: 100%;
+        padding: 10px;
+    }
+    .menu-controls button{
+        background-color: transparent;
+        border: 1px solid darkcyan;
+        padding: 5px;
+        cursor: pointer;
+    }
+    .menu-controls button span{
+        display: block;
+        height: 3px;
+        width: 20px;
+        background-color: darkcyan;
+        pointer-events: none;
+    }
+    .menu-controls button span:not(:last-of-type){
+        margin-bottom: 4px;
+    }
+    .nav ul:first-of-type li:first-of-type{
+        display: none;
+    }
+    .nav ul{
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        background-color: darkcyan;
+    }
+    .nav ul.close{
+        display: none;
+    }
+    .nav ul.first{
+        justify-content: center;
+    }
+    .nav ul.second{
+        justify-content: center;
+    }
+
+    .nav ul li:not(:last-of-type){
+        margin-right: 0;
+    }
+    .nav ul li{
+        display: flex;
+    }
+    .nav ul li a{
+        padding: 10px;
+    }
+    .logout{
+        padding: 10px;
+    }
+}
